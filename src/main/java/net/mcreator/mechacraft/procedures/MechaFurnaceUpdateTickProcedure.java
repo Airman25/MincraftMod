@@ -112,7 +112,7 @@ public class MechaFurnaceUpdateTickProcedure extends MechacraftModElements.ModEl
 					return _retval.get();
 				}
 			}.getEnergyStored(new BlockPos((int) x, (int) y, (int) z))) > 0)) {
-				if (((((new Object() {
+				if ((((!((new Object() {
 					public ItemStack getItemStack(BlockPos pos, int sltid) {
 						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 						TileEntity _ent = world.getTileEntity(pos);
@@ -123,7 +123,7 @@ public class MechaFurnaceUpdateTickProcedure extends MechacraftModElements.ModEl
 						}
 						return _retval.get();
 					}
-				}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == new ItemStack(Blocks.AIR, (int) (1)).getItem())
+				}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == new ItemStack(Blocks.AIR, (int) (1)).getItem()))
 						&& (world.getWorld().getRecipeManager().getRecipe(IRecipeType.SMELTING, new Inventory((new Object() {
 							public ItemStack getItemStack(BlockPos pos, int sltid) {
 								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -281,33 +281,6 @@ public class MechaFurnaceUpdateTickProcedure extends MechacraftModElements.ModEl
 								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
 										.getValue(new ResourceLocation("block.furnace.fire_crackle")),
 								SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
-					}
-				}
-			} else {
-				{
-					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-					BlockState _bs = MechaFurnaceBlock.block.getDefaultState();
-					BlockState _bso = world.getBlockState(_bp);
-					for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-						IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
-						if (_bs.has(_property))
-							_bs = _bs.with(_property, (Comparable) entry.getValue());
-					}
-					TileEntity _te = world.getTileEntity(_bp);
-					CompoundNBT _bnbt = null;
-					if (_te != null) {
-						_bnbt = _te.write(new CompoundNBT());
-						_te.remove();
-					}
-					world.setBlockState(_bp, _bs, 3);
-					if (_bnbt != null) {
-						_te = world.getTileEntity(_bp);
-						if (_te != null) {
-							try {
-								_te.read(_bnbt);
-							} catch (Exception ignored) {
-							}
-						}
 					}
 				}
 			}
