@@ -2,17 +2,18 @@
   "_fv": 10,
   "_type": "block",
   "definition": {
-    "texture": "copper_battery_block",
-    "textureTop": "test",
-    "textureLeft": "test",
-    "textureFront": "copper_block",
-    "textureRight": "test",
-    "textureBack": "test",
+    "texture": "portalblock3",
+    "textureTop": "portalblock2",
+    "textureLeft": "portalblock1",
+    "textureFront": "portalblock1",
+    "textureRight": "portalblock1",
+    "textureBack": "portalblock1",
     "renderType": 11,
     "customModelName": "Single texture",
     "rotationMode": 0,
     "emissiveRendering": false,
     "itemTexture": "",
+    "blockBase": "Slab",
     "hasTransparency": false,
     "connectedSides": false,
     "transparencyType": "SOLID",
@@ -22,13 +23,13 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "Copper Energy Batery",
+    "name": "Portalblock",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
     "creativeTab": {
-      "value": "BUILDING_BLOCKS"
+      "value": "CUSTOM:MagicCraft"
     },
     "destroyTool": "Not specified",
     "customDrop": {
@@ -39,11 +40,11 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canProvidePower": false,
-    "lightOpacity": 255,
+    "lightOpacity": 0,
     "material": {
-      "value": "ROCK"
+      "value": "IRON"
     },
-    "tickRate": 1,
+    "tickRate": 10,
     "tickRandomly": false,
     "isReplaceable": false,
     "colorOnMap": "DEFAULT",
@@ -59,7 +60,7 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "METAL"
     },
     "luminance": 0.0,
     "unbreakable": false,
@@ -80,20 +81,21 @@
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
     "inventoryInSlotIDs": [],
-    "hasEnergyStorage": true,
+    "hasEnergyStorage": false,
     "energyInitial": 0,
-    "energyCapacity": 10000,
-    "energyMaxReceive": 100,
-    "energyMaxExtract": 100,
+    "energyCapacity": 400000,
+    "energyMaxReceive": 200,
+    "energyMaxExtract": 200,
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onTickUpdate": {
-      "name": "CopperEnergBatteryUpdateTick"
-    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
-    "blocksToReplace": [],
+    "blocksToReplace": [
+      {
+        "value": "Blocks.STONE"
+      }
+    ],
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,

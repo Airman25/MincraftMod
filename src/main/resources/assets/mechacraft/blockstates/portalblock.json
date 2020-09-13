@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mechacraft:block/portalblock"
+    },
+    "type=top": {
+      "model": "mechacraft:block/portalblock_top"
+    },
+    "type=double": {
+      "model": "mechacraft:block/portalblock_full"
+    }
+  }
+}

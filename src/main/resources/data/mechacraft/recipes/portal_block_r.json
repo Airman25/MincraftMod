@@ -1,0 +1,36 @@
+{
+  "group": "mechacraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:nether_wart"
+    },
+    "3": {
+      "item": "minecraft:end_crystal"
+    },
+    "4": {
+      "item": "minecraft:redstone_block"
+    },
+    "5": {
+      "item": "minecraft:end_crystal"
+    },
+    "6": {
+      "item": "minecraft:end_stone"
+    },
+    "7": {
+      "item": "minecraft:end_stone"
+    },
+    "8": {
+      "item": "minecraft:end_stone"
+    }
+  },
+  "result": {
+    "item": "mechacraft:portalblock",
+    "count": 1
+  }
+}

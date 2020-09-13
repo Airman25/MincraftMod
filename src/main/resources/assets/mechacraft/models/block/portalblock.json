@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "mechacraft:blocks/portalblock3",
+    "top": "mechacraft:blocks/portalblock2",
+    "side": "mechacraft:blocks/portalblock1"
+  }
+}

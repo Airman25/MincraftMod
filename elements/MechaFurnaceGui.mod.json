@@ -46,6 +46,32 @@
           "x": 480,
           "y": 132
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Energy:<BNBT:integer:Energy>",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Energy:<BNBT:integer:Energy>",
+          "x": 413,
+          "y": 75
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Electro Furnace",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Electro Furnace",
+          "x": 255,
+          "y": 75
+        }
       }
     ]
   }

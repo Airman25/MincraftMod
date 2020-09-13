@@ -1,0 +1,46 @@
+{
+  "_fv": 10,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.NETHER_WART"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.END_CRYSTAL"
+      },
+      {
+        "value": "Blocks.REDSTONE_BLOCK"
+      },
+      {
+        "value": "Items.END_CRYSTAL"
+      },
+      {
+        "value": "Blocks.END_STONE"
+      },
+      {
+        "value": "Blocks.END_STONE"
+      },
+      {
+        "value": "Blocks.END_STONE"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Portalblock"
+    },
+    "name": "portal_block_r",
+    "namespace": "mod"
+  }
+}

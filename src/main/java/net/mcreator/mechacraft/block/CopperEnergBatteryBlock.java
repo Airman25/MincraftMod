@@ -246,7 +246,7 @@ public class CopperEnergBatteryBlock extends MechacraftModElements.ModElement {
 
 		@Override
 		public ITextComponent getDisplayName() {
-			return new StringTextComponent("Copper Energ Battery");
+			return new StringTextComponent("Copper Energy Batery");
 		}
 
 		@Override

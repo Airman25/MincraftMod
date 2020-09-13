@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "portalblock3",
+        "2": "portalblock1",
+        "3": "portalblock2"
+      },
+      "name": "default"
+    }
+  }
+}
