@@ -27,26 +27,26 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.Map;
 
 @MechacraftModElements.ModElement.Tag
-public class MechaFurnaceUpdateTickProcedure extends MechacraftModElements.ModElement {
-	public MechaFurnaceUpdateTickProcedure(MechacraftModElements instance) {
-		super(instance, 50);
+public class FurnaceWorkingProcedure extends MechacraftModElements.ModElement {
+	public FurnaceWorkingProcedure(MechacraftModElements instance) {
+		super(instance, 56);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
-			System.err.println("Failed to load dependency x for procedure MechaFurnaceUpdateTick!");
+			System.err.println("Failed to load dependency x for procedure FurnaceWorking!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
-			System.err.println("Failed to load dependency y for procedure MechaFurnaceUpdateTick!");
+			System.err.println("Failed to load dependency y for procedure FurnaceWorking!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
-			System.err.println("Failed to load dependency z for procedure MechaFurnaceUpdateTick!");
+			System.err.println("Failed to load dependency z for procedure FurnaceWorking!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
-			System.err.println("Failed to load dependency world for procedure MechaFurnaceUpdateTick!");
+			System.err.println("Failed to load dependency world for procedure FurnaceWorking!");
 			return;
 		}
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");

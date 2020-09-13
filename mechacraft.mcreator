@@ -570,6 +570,35 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "crative_energy_batery"
+    },
+    {
+      "name": "FurnaceWorking",
+      "type": "procedure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "furnace_working",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -579,8 +608,8 @@
       "item.mechacraft.steel_ingot": "Steel",
       "item.mechacraft.copper_armor_leggings": "Copper Leggings",
       "item.mechacraft.steel_axe": "Steel Axe",
-      "item.mechacraft.copper_axe": "Copper Axe",
       "item.mechacraft.copper_shovel": "Copper Shovel",
+      "item.mechacraft.copper_axe": "Copper Axe",
       "block.mechacraft.copper_ore_block": "Block of Copper",
       "item.mechacraft.copper_ingot": "Copper",
       "item.mechacraft.copper_pickaxe": "Copper Pickaxe",
